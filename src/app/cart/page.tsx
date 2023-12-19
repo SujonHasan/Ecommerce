@@ -21,7 +21,7 @@ function Page() {
         {/* cartItems ?  */}
         <div className='cartWrapper '>
             {
-                cartItems.map((item)=>(
+              cartItems.length > 0 &&  cartItems.map((item:any)=>(
                     <div key={item.id} className='d-md-flex text-center justify-content-evenly gap-2 shadow p-3 mb-5 bg-body rounded'>
                           <img width={300} height={300} src={item.image} alt="image" />
                         <h5 className='my-auto'>{item.title}</h5>
