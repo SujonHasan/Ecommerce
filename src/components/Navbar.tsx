@@ -13,7 +13,7 @@ const Navbar = () => {
          <span>Order-Shop</span>
          <div>
             <Link className='navLink mx-3' href={"/"}>Home</Link>
-            <Link className='navLink mx-2' href={"/cart"}>Cart</Link>
+            <Link className='navLink mx-2' href={"/cart"}>My Orders</Link>
             <span style={{fontWeight:"bolder"}}>items:{cartItems.length}</span>
          </div> 
     </div>
