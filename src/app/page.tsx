@@ -10,6 +10,7 @@ export default function Home() {
   const disPatch = useDispatch();
 
   const [products, setProducts] = useState([])
+
   const getProduct = async () => {
     const result = await fetch('https://fakestoreapi.com/products');
     const data = await result.json();
@@ -22,7 +23,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1 className='text-primary' >Welcome E-commerce</h1>
+      <h1 className='text-primary fs-5' >Welcome Order Shop</h1>
       <div className='row text-center'>
         {products.length &&  products.map((product: any) => {
           return <>
