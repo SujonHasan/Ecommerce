@@ -22,13 +22,13 @@ export default function Home() {
   }, []) 
 
   return (
-    <main className={styles.main}>
+    <main className="text-center my-5 mx-2">
       <h1 className='text-primary fs-5' >Welcome Order Shop</h1>
       <div className='row text-center'>
         {products.length &&  products.map((product: any) => {
           return <>
             <div key={product.id} className="card p-3 col-lg-4 col-md-6 col-12">
-              <img width={300} height={300} src={product.image} alt="image" />
+              <img className='mx-auto' width={300} height={300} src={product.image} alt="image" />
               <div className="card-body"> 
                 <h4 className='card-title' >{product.title}</h4> 
                 <h5 className='cart-text bold' > Price: {product.price}</h5>

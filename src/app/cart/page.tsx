@@ -17,7 +17,7 @@ function Page() {
 
   return (
     <div> 
-        <h3 className='text-center'>My Orders</h3>
+        <h3 className='text-center my-5'>My Orders</h3>
         {/* cartItems ?  */}
         <div className='cartWrapper '>
             {
